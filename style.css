@@ -225,3 +225,23 @@ p, ul{
     background-color: var(--cor-fundo);
     color: var(--cor-fonte);
 }
+
+#seta-retorno{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background-color: var(--cor-fundo);
+    border: 2px solid var(--cor-fonte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seta-retorno a{
+    font-size: 4rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
