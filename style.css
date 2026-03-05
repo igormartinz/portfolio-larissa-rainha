@@ -35,26 +35,32 @@ section {
     flex-direction: column;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fonte-titulo);
 }
 
-h2{
+h2 {
     font-size: var(--titulo-desktop);
 }
 
-p, ul{
+p,
+ul {
     font-size: var(--texto-desktop);
 }
 
-.alinhamento-superior-direito{
+.alinhamento-superior-direito {
     display: flex;
     align-items: end;
     justify-content: start;
     text-align: right;
 }
 
-.alinhamento-inferior-direito{
+.alinhamento-inferior-direito {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -62,7 +68,7 @@ p, ul{
     text-align: right;
 }
 
-.alinhamento-superior-esquerdo{
+.alinhamento-superior-esquerdo {
     display: flex;
     align-items: start;
     justify-content: start;
@@ -118,14 +124,14 @@ p, ul{
     gap: .5em;
 }
 
-#sumario ul li{
+#sumario ul li {
     width: 60em;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.linha-pontilhada{
+.linha-pontilhada {
     width: 100%;
     border-bottom: 1px dashed;
 }
@@ -165,18 +171,18 @@ p, ul{
     width: 25%;
 }
 
-#divisao-bloco-apresentacao{
+#divisao-bloco-apresentacao {
     display: flex;
     flex-direction: column;
     gap: 5em;
 }
 
-.divisao-bloco-apresentacao{
+.divisao-bloco-apresentacao {
     display: flex;
     flex-direction: row;
 }
 
-.divisao-bloco-apresentacao article{
+.divisao-bloco-apresentacao article {
     width: 40em;
 }
 
@@ -189,16 +195,16 @@ p, ul{
     font-weight: bold;
 }
 
-#apresentacao article h2{
+#apresentacao article h2 {
     font-size: var(--titulo-desktop);
     margin-bottom: .3em;
 }
 
-#apresentacao ul{
+#apresentacao ul {
     margin-left: 2em;
 }
 
-#apresentacao article div{
+#apresentacao article div {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -206,7 +212,7 @@ p, ul{
     gap: 1.5em;
 }
 
-#apresentacao div article div:first-of-type{
+#apresentacao div article div:first-of-type {
     margin-bottom: 1.5em;
 }
 
@@ -225,78 +231,108 @@ p, ul{
     background-size: cover;
 }
 
-#casa-campo-1 article, #casa-campo-2 article{
+#casa-campo-1 article,
+#casa-campo-2 article {
     padding: 3em 15em;
 }
 
 /* SONHO MENINA */
 
-#sonho-menina{
+#sonho-menina {
     background-image: url(img/sonho-menina.png);
     background-size: cover;
 }
 
-#sonho-menina article, #casa-aconchego-1 article, #casa-aconchego-2 article{
+#sonho-menina article,
+#casa-aconchego-1 article,
+#casa-aconchego-2 article {
     padding: 4rem;
 }
 
 /* CASA ACONCHEGO */
 
-#casa-aconchego-1{
+#casa-aconchego-1 {
     background-image: url(img/casa-aconchego-1.png);
     background-size: cover;
 }
 
-#casa-aconchego-2{
+#casa-aconchego-2 {
     background-image: url(img/casa-aconchego-2.png);
     background-size: cover;
 }
 
 /* COZINHA BEATRIZ */
 
-#cozinha-beatriz-1{
+#cozinha-beatriz-1 {
     background-image: url(img/cozinha-beatriz-1.png);
     background-size: cover;
 }
 
-#cozinha-beatriz-2{
+#cozinha-beatriz-2 {
     background-image: url(img/cozinha-beatriz-2.png);
     background-size: cover;
 }
 
-#cozinha-beatriz-1 article, #cozinha-beatriz-2 article{
+#cozinha-beatriz-1 article,
+#cozinha-beatriz-2 article {
     padding: 3em;
 }
 
 /* TERRACO */
 
-#terraco{
+#terraco {
     background-image: url(img/terraco.png);
     background-size: cover;
 }
 
 /* LANEIGE */
 
-#laneige{
+#laneige {
     background-image: url(img/lancige.png);
     background-size: cover;
 }
 
-#laneige-mobiliario{
+#laneige-mobiliario {
     background-image: url(img/lancige-mobiliario.png);
     background-size: cover;
 }
 
 /* CONTATO */
 
-#contato{
+#contato {
     background-color: var(--cor-fundo);
     color: var(--cor-fonte);
 }
 
+#contato h2 {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+#contato ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contato ul li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5em;
+}
+
+#contato ul li a {
+    color: var(--cor-fonte);
+}
+
+.icone-contato {
+    width: 2.5em;
+}
+
 /* SETA DE RETORNO */
 
-#seta-retorno{
+#seta-retorno {
     position: fixed;
     bottom: 2em;
     right: 2em;
@@ -310,7 +346,7 @@ p, ul{
     align-items: center;
 }
 
-#seta-retorno a{
+#seta-retorno a {
     font-size: 10rem;
     text-decoration: none;
     color: var(--cor-secundaria);
