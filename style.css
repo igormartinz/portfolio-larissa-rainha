@@ -337,17 +337,30 @@ ul {
     bottom: 2em;
     right: 2em;
     border-radius: 50%;
-    width: 10em;
-    height: 10em;
+    width: 7em;
+    height: 7em;
     background-color: var(--cor-fundo);
     border: 2px solid var(--cor-fonte);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s;
+}
+
+#seta-retorno:hover{
+    background-color: var(--cor-secundaria);
 }
 
 #seta-retorno a {
-    font-size: 10rem;
-    text-decoration: none;
-    color: var(--cor-secundaria);
+    background-image: url(icons/setacima.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4em;
+    height: 4em;
+    color: #000;
+    transition: all .5s;
+}
+
+#seta-retorno a:hover{
+    background-image: url(icons/setacimahover.svg);
 }
