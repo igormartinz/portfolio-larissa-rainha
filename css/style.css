@@ -1,0 +1,21 @@
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../fonts/Telegraf-Regular-400.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../fonts/Telegraf-UltraBold-800.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../fonts/Telegraf-UltraLight-200.woff') format('woff');
+    font-weight: 200;
+}
