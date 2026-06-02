@@ -19,3 +19,384 @@
     src: url('../fonts/Telegraf-UltraLight-200.woff') format('woff');
     font-weight: 200;
 }
+
+:root {
+    --cor-fundo-primaria: #EEEEEE;
+    --cor-primaria: #813429;
+    --cor-secundaria: #956F6C;
+    --cor-fonte: #303030;
+    --fonte-telegraf: 'Telegraf';
+    --fonte-libre-franklin: 'Libre Franklin';
+    --fonte-montserrat: 'Montserrat';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#casa-campo, #sonho-menina, #cozinha-beatriz, #descanso-verde, #sobre, #contato{
+    scroll-margin-top: 115px;
+}
+
+body {
+    background-color: var(--cor-fundo-primaria);
+    color: var(--cor-fonte);
+}
+
+p,
+ul {
+    font-family: var(--fonte-montserrat);
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+p span {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-telegraf);
+    font-weight: bold;
+}
+
+/* CABECALHO */
+.cabecalho {
+    background-color:var(--cor-fundo-primaria);
+    display: flex;
+    height: 68px;
+    padding: 3em 2em;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000031;
+    z-index: 999;
+}
+
+.cabecalho.sem-sombra {
+    box-shadow: none;
+}
+
+.logo {
+    height: 4em;
+}
+
+.menu {
+    width: 3.5em;
+}
+
+.hamburguer {
+    border: none;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    padding: 1em;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000031;
+    background: var(--cor-fundo-primaria);
+    transform: translateY(-200%);
+    transition: 0.8s;
+    z-index: 998;
+}
+
+#menu.ativo {
+    transform: translateY(0);
+}
+
+header ul{
+    list-style: none;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+header a, .btn-submenu{
+    font-family: var(--fonte-montserrat);
+    font-weight: 500;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.btn-submenu{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    gap: .5em;
+}
+
+.submenu li:first-child{
+    margin-top: 1em;
+}
+
+.submenu.ativo {
+    max-height: 200px;
+}
+
+.seta {
+    transition: transform 0.3s ease;
+}
+
+.seta.ativa {
+    transform: rotate(180deg);
+}
+
+
+/* CONTEUDO */
+.conteudo {
+    padding: 125px 10px 25px 10px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 15px;
+    height: 13em;
+    object-fit: cover;
+}
+
+.titulo {
+    text-align: center;
+    font-family: var(--fonte-telegraf);
+    color: var(--cor-primaria);
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-family: var(--fonte-telegraf);
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+/* SOBRE */
+#sobre {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#perfil {
+    border-radius: 50%;
+    width: 15em;
+    max-width: 15em;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+.softwares {
+    display: flex;
+    align-self: center;
+    gap: 0.8em;
+    margin-bottom: 15px;
+}
+
+.softwares img {
+    width: 40px;
+}
+
+/* PROJETOS */
+#projetos {
+    margin-bottom: 25px;
+}
+
+.projeto {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.projeto h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-primaria);
+}
+
+.projeto p {
+    margin: 0;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.projeto-cores {
+    margin: 25px auto;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto h4 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-montserrat);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.projeto ul {
+    text-align: start;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.projeto-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* CORES DO PROJETO */
+.projeto-cores div {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+#cor-quarto-infantil-1 {
+    background-color: #DDAB9E;
+}
+
+#cor-quarto-infantil-2 {
+    background-color: #9F4339;
+}
+
+#cor-quarto-infantil-3 {
+    background-color: #B39069;
+}
+
+#cor-estar-azul-1 {
+    background-color: #302939;
+}
+
+#cor-estar-azul-2 {
+    background-color: #A25B0A;
+}
+
+#cor-estar-azul-3 {
+    background-color: #B9ADA3;
+}
+
+#cor-sonho-menina-1 {
+    background-color: #864D3C;
+}
+
+#cor-sonho-menina-2 {
+    background-color: #DDAB9E;
+}
+
+#cor-sonho-menina-3 {
+    background-color: #D3CED0;
+}
+
+#cor-cozinha-beatriz-1 {
+    background-color: #444B3B;
+}
+
+#cor-cozinha-beatriz-2 {
+    background-color: #AAB999;
+}
+
+#cor-cozinha-beatriz-3 {
+    background-color: #CBBEAC;
+}
+
+#cor-descanso-verde-1 {
+    background-color: #514924;
+}
+
+#cor-descanso-verde-2 {
+    background-color: #50412B;
+}
+
+#cor-descanso-verde-3 {
+    background-color: #A58A63;
+}
+
+
+/* CONTATO */
+#contato {
+    width: 17em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contato .titulo {
+    margin-bottom: 10px;
+}
+
+#contato a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5em;
+    text-decoration: none;
+}
+
+#contato a img {
+    box-sizing: content-box;
+    width: 2em;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 50%;
+    padding: .5em;
+}
+
+#contato a div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+#contato a div h3 {
+    font-family: var(--fonte-telegraf);
+    color: var(--cor-primaria);
+    font-weight: 600;
+}
+
+#contato a div p {
+    font-family: var(--fonte-libre-franklin);
+    margin: 0;
+    color: var(--cor-fonte);
+}
+
+.contato-img {
+    margin-top: 15px;
+}
+
+/* RODAPE */
+footer {
+    background-color: var(--cor-primaria);
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: var(--cor-fundo-primaria);
+}

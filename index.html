@@ -11,25 +11,44 @@
 
 <body>
     <header>
-        <img src="/img/logo.png" alt="Logo Larissa Rainha">
-        <img src="/svg/list.svg" alt="Menu">
+        <div class="cabecalho">
+            <img src="/img/logo.png" alt="Logo Larissa Rainha" class="logo">
+            <button class="hamburguer" id="btnMenu">
+                <img src="/svg/list.svg" alt="">
+            </button>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#sobre">SOBRE MIM</a></li>
+                <li>
+                    <button id="btnProjetos" class="btn-submenu">PROJETOS <img src="/svg/down-solid.svg" alt=""  class="seta" id="setaProjetos"></button>
+                    <ul id="submenuProjetos" class="submenu">
+                        <li><a href="#casa-campo">1. Casa do Campo</a></li>
+                        <li><a href="#sonho-menina">2. Sonho de Menina</a></li>
+                        <li><a href="#cozinha-beatriz">3. Cozinha Beatriz</a></li>
+                        <li><a href="#descanso-verde">4. Descanso Verde</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main class="conteudo">
         <section>
-            <img src="/img/descanso-verde-1.png" alt="">
-            <h1>Portfólio</h1>
+            <img src="/img/descanso-verde-1.png" alt="" class="img">
+            <h1 class="titulo">Portfólio</h1>
         </section>
 
-        <section>
-            <img src="/img/perfil.png" alt="Foto da designer Larissa Rainha">
+        <section id="sobre">
+            <img src="/img/perfil.png" alt="Foto da designer Larissa Rainha" id="perfil">
 
             <p>Muito prazer! Me chamo <span>Larissa Rainha</span></p>
             <p>Sou uma pessoa muito amigável, que está sempre fazendo coisas novas, além de ser muito curiosa! Meu hobby
                 favorito é o desenho. Quero crescer profissionalmente, e melhorar cada vez mais na área, fazendo tudo
                 com muito esforço e responsabidade!</p>
 
-            <h2>Competências</h2>
+            <h2 class="subtitulo">Competências</h2>
             <ul>
                 <li>Modelagem 3D</li>
                 <li>Renderização com IA</li>
@@ -39,14 +58,14 @@
                 <li>Noções gráficas</li>
             </ul>
 
-            <h2>Formação</h2>
+            <h2 class="subtitulo">Formação</h2>
             <ul>
                 <li>2023 - Atual : Bacharelado em Design de Ambientes - Escola de Design Campus BH (UEMG).</li>
                 <li>2021 a 2023: Curso Técnico em Design de Interiores | SENAI Horto - Belo Horizonte.</li>
             </ul>
 
-            <h2>Softwares</h2>
-            <div>
+            <h2 class="subtitulo">Softwares</h2>
+            <div class="softwares">
                 <img src="/svg/autocad.svg" alt="">
                 <img src="/svg/sketchup.svg" alt="">
                 <img src="/svg/vray.svg" alt="">
@@ -55,27 +74,27 @@
                 <img src="/svg/canva.svg" alt="">
             </div>
 
-            <h2>Idiomas</h2>
+            <h2 class="subtitulo">Idiomas</h2>
             <ul>
                 <li>Inglês - Intermediário</li>
                 <li>Espanhol - Básico</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Projetos</h2>
+        <section id="projetos">
+            <h2 class="titulo">Projetos</h2>
 
-            <article>
+            <article class="projeto" id="casa-campo">
                 <h3>01. CASA DE CAMPO: QUARTO INFANTIL</h3>
 
                 <p>Idealizado em grupo, para a disciplina optativa de Maquetes Arquitetônicas.</p>
                 <p>3D: de própria autoria</p>
                 <p>Render: de própria autoria</p>
 
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="projeto-cores">
+                    <div id="cor-quarto-infantil-1"></div>
+                    <div id="cor-quarto-infantil-2"></div>
+                    <div id="cor-quarto-infantil-3"></div>
                 </div>
 
                 <h4>Necessidades:</h4>
@@ -90,65 +109,189 @@
                     <li>Iluminação quente para trazer aconchego e tranqulidade</li>
                 </ul>
 
-                <div>
-                    <img src="/img/casa-de-campo-quarto-1.png" alt="">
-                    <img src="/img/casa-de-campo-quarto-2.png" alt="">
-                    <img src="/img/casa-de-campo-quarto-3.png" alt="">
+                <div class="projeto-imgs">
+                    <img src="/img/casa-de-campo-quarto-1.png" alt="" class="img">
+                    <img src="/img/casa-de-campo-quarto-2.png" alt="" class="img">
+                    <img src="/img/casa-de-campo-quarto-3.png" alt="" class="img">
+                </div>
+            </article>
+
+            <article class="projeto">
+                <h3>01. CASA DE CAMPO: COZINHA / ESTAR AZUL</h3>
+
+                <p>Idealizado em grupo, para a disciplina optativa de Maquetes Arquitetônicas.</p>
+                <p>3D: de própria autoria</p>
+                <p>Render: de própria autoria</p>
+
+                <div class="projeto-cores">
+                    <div id="cor-estar-azul-1"></div>
+                    <div id="cor-estar-azul-2"></div>
+                    <div id="cor-estar-azul-3"></div>
+                </div>
+
+                <h4>Necessidades:</h4>
+                <ul>
+                    <li>Cores inspiradas nas casas coloniais do interior de Minas Gerais</li>
+                    <li>Ambiente de destaque</li>
+                    <li>Ilha grande para reuniões e almoços</li>
+                    <li>Iluminação mais neutra para tarefas do dia-a-dia</li>
+                    <li>Quadros para compor o ambiente</li>
+                    <li>Quadros fofos para compor o ambiente</li>
+                    <li>Iluminação quente para trazer aconchego e tranqulidade na sala de estar</li>
+                    <li>Sofá grande para caber mais pessoas</li>
+                </ul>
+
+                <div class="projeto-imgs">
+                    <img src="/img/casa-de-campo-cozinha-1.png" alt="" class="img">
+                    <img src="/img/casa-de-campo-cozinha-2.png" alt="" class="img">
+                    <img src="/img/casa-de-campo-cozinha-3.png" alt="" class="img">
+                </div>
+            </article>
+
+            <article class="projeto" id="sonho-menina">
+                <h3>02. SONHO DE MENINA</h3>
+
+                <p>Consultoria cuja proposta era aplicar o rosa sem infantilização, e realizar a mudança de forma
+                    econômica.</p>
+                <p>3D: de própria autoria</p>
+                <p>Render: de própria autoria</p>
+
+                <div class="projeto-cores">
+                    <div id="cor-sonho-menina-1"></div>
+                    <div id="cor-sonho-menina-2"></div>
+                    <div id="cor-sonho-menina-3"></div>
+                </div>
+
+                <h4>Necessidades:</h4>
+                <ul>
+                    <li>Utlização da cor rosa sem infantilizar o ambiente</li>
+                    <li>Troca de guarda-roupa para mais espaço de armazenamento</li>
+                    <li>Cabeceira para trazer aconchego e preenchimento do ambiente</li>
+                    <li>Bosserie trazendo destaque a parede da cama</li>
+                    <li>Penteadeira com espelho para gravações de conteúdo de beleza</li>
+                    <li>Espelho de corpo inteiro para visualização e fotos</li>
+                    <li>Ripado para destacar e trazer fundo aos conteúdos</li>
+                </ul>
+
+                <div class="projeto-imgs">
+                    <img src="/img/sonho-menina-1.png" alt="" class="img">
+                    <img src="/img/sonho-menina-2.png" alt="" class="img">
+                </div>
+            </article>
+
+            <article class="projeto" id="cozinha-beatriz">
+                <h3>03. COZINHA BEATRIZ</h3>
+
+                <p>Idealizado em grupo, para a disciplina de Detalhamento Construtivo.</p>
+                <p>3D: de própria autoria</p>
+                <p>Render: de própria autoria</p>
+
+                <div class="projeto-cores">
+                    <div id="cor-cozinha-beatriz-1"></div>
+                    <div id="cor-cozinha-beatriz-2"></div>
+                    <div id="cor-cozinha-beatriz-3"></div>
+                </div>
+
+                <h4>Necessidades:</h4>
+                <ul>
+                    <li>Cozinha compacta, sofisticada e funcional</li>
+                    <li>Muito espaço para armazenamento</li>
+                    <li>Cristaleira para coleção de pratos turcos</li>
+                    <li>Cores mais claras e amadeirado</li>
+                    <li>Espaço para receber até 5 pessoas</li>
+                    <li>Adega para vinhos</li>
+                </ul>
+
+                <div class="projeto-imgs">
+                    <img src="/img/cozinha-beatriz-1.png" alt="" class="img">
+                    <img src="/img/cozinha-beatriz-2.png" alt="" class="img">
+                </div>
+            </article>
+
+            <article class="projeto" id="descanso-verde">
+                <h3>04. DESCANSO VERDE</h3>
+
+                <p>Idealizado em grupo, para a disciplina optativa de Maquetes Arquitetônicas.</p>
+                <p>3D: de própria autoria</p>
+                <p>Render: de própria autoria</p>
+
+                <div class="projeto-cores">
+                    <div id="cor-descanso-verde-1"></div>
+                    <div id="cor-descanso-verde-2"></div>
+                    <div id="cor-descanso-verde-3"></div>
+                </div>
+
+                <h4>Necessidades:</h4>
+                <ul>
+                    <li>Verde como destaque trazendo relaxamento</li>
+                    <li>Escrivaninha para momentos de trabalho/estudo</li>
+                    <li>Nichos</li>
+                    <li>Guarda-roupa grande para armazenamento</li>
+                    <li>Espelho de corpo inteiro</li>
+                    <li>Iluminação quente para trazer aconchego e tranqulidade</li>
+                </ul>
+
+                <div class="projeto-imgs">
+                    <img src="/img/descanso-verde-1.png" alt="" class="img">
+                    <img src="/img/descanso-verde-2.png" alt="" class="img">
+                    <img src="/img/descanso-verde-3.png" alt="" class="img">
                 </div>
             </article>
 
         </section>
 
-        <section>
-            <h2>Contato</h2>
+        <section id="contato">
+            <h2 class="titulo">Contato</h2>
 
-            <div>
+            <a href="#">
                 <img src="/svg/compass.svg" alt="">
                 <div>
                     <h3>Endereço</h3>
                     <p>Sabará - Minas Gerais</p>
                 </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="mailto:lrinteriores55@gmail.com" target="_blank">
                 <img src="/svg/envelope.svg" alt="">
                 <div>
                     <h3>Email</h3>
                     <p>lrinteriores55@gmail.com</p>
                 </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="https://wa.me/5531986733043" target="_blank">
                 <img src="/svg/whatsapp.svg" alt="">
                 <div>
                     <h3>Whatsapp</h3>
                     <p>(31) 98673-3043</p>
                 </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="https://www.instagram.com/lrinteriores___/" target="_blank">
                 <img src="/svg/instagram.svg" alt="">
                 <div>
-                    <h3>Endereço</h3>
+                    <h3>Instagram</h3>
                     <p>@lrinteriores___</p>
                 </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="https://www.linkedin.com/in/larissa-rainha-b7abbb352/" target="_blank">
                 <img src="/svg/linkedin.svg" alt="">
                 <div>
                     <h3>Linkedin</h3>
                     <p>Larissa Rainha</p>
                 </div>
-            </div>
+            </a>
 
-            <img src="/img/logo.png" alt="">
+            <img src="/img/logo.png" alt="" class="contato-img">
         </section>
     </main>
 
     <footer>
         <p>© 2026 · Larissa Rainha. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/events.js"></script>
 </body>
 
 </html>
