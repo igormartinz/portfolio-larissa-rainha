@@ -120,8 +120,6 @@ footer p {
 
 @media (min-width: 992px) {
     /* CONTEUDO */
-    .conteudo {}
-
     .img {
         aspect-ratio: 16/8;
     }
@@ -129,9 +127,5 @@ footer p {
     .titulo {
         text-align: start;
         font-size: 64px;
-    }
-
-    
-
-    
+    }  
 }

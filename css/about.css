@@ -17,9 +17,16 @@
 
 .softwares-lista {
     display: flex;
-    align-self: center;
-    gap: 0.8em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
     margin-bottom: 15px;
+}
+
+.softwares-lista div{
+    display: flex;
+    gap: 0.5em;
 }
 
 .softwares-lista img {
@@ -55,7 +62,7 @@
         width: 22em;
         max-width: 22em;
         align-self: center;
-        margin-bottom: 25px;
+        margin-bottom: 0;
     }
 
     .softwares-lista div {

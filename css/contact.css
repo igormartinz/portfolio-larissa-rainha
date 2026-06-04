@@ -1,14 +1,15 @@
 /* CONTATO */
 #contato {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato div {
     width: 17em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-
-#contato .titulo {
-    margin-bottom: 10px;
 }
 
 #contato a {
@@ -38,6 +39,7 @@
     font-family: var(--fonte-telegraf);
     color: var(--cor-primaria);
     font-weight: 600;
+    margin: 0;
 }
 
 #contato a div p {
@@ -47,11 +49,12 @@
 }
 
 .contato-img {
-    margin-top: 15px;
+    margin: 15px auto 0 auto;
+    width: 80%;
 }
 
 @media (min-width: 992px) {
-    #contato{
+    #contato {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -61,13 +64,19 @@
         margin-right: 0;
     }
 
-    #contato div h3{
+    #contato div h3 {
         margin: 0;
     }
 
-    #contato div{
+    #contato div {
         display: flex;
         flex-direction: column;
         gap: .5em;
+        margin: 0;
+    }
+
+    .contato-img {
+        margin: 0;
+        width: auto;
     }
 }

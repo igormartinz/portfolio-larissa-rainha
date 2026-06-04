@@ -42,10 +42,10 @@
     font-weight: bold;
 }
 
-.projeto-imgs {
+.projeto-imgs, .projeto-imgs div {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: .8em;
 }
 
 /* CORES DO PROJETO */
@@ -134,6 +134,7 @@
         display: flex;
         gap: 1em;
         width: 100%;
+        flex-direction: row;
     }
 
     .img-quadrado {
