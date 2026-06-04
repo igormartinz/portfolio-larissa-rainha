@@ -1,0 +1,73 @@
+/* CONTATO */
+#contato {
+    width: 17em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contato .titulo {
+    margin-bottom: 10px;
+}
+
+#contato a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5em;
+    text-decoration: none;
+}
+
+#contato a img {
+    box-sizing: content-box;
+    width: 2em;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 50%;
+    padding: .5em;
+}
+
+#contato a div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+#contato a div h3 {
+    font-family: var(--fonte-telegraf);
+    color: var(--cor-primaria);
+    font-weight: 600;
+}
+
+#contato a div p {
+    font-family: var(--fonte-libre-franklin);
+    margin: 0;
+    color: var(--cor-fonte);
+}
+
+.contato-img {
+    margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+    #contato{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #contato div h3{
+        margin: 0;
+    }
+
+    #contato div{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+}

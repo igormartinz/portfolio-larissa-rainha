@@ -1,0 +1,167 @@
+/* PROJETOS */
+#projetos {
+    margin-bottom: 25px;
+}
+
+.projeto {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.projeto h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-primaria);
+}
+
+.projeto p {
+    margin: 0;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.projeto-cores {
+    margin: 25px auto;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto h4 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-montserrat);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.projeto ul {
+    text-align: start;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.projeto-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* CORES DO PROJETO */
+.projeto-cores div {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+#cor-quarto-infantil-1 {
+    background-color: #DDAB9E;
+}
+
+#cor-quarto-infantil-2 {
+    background-color: #9F4339;
+}
+
+#cor-quarto-infantil-3 {
+    background-color: #B39069;
+}
+
+#cor-estar-azul-1 {
+    background-color: #302939;
+}
+
+#cor-estar-azul-2 {
+    background-color: #A25B0A;
+}
+
+#cor-estar-azul-3 {
+    background-color: #B9ADA3;
+}
+
+#cor-sonho-menina-1 {
+    background-color: #864D3C;
+}
+
+#cor-sonho-menina-2 {
+    background-color: #DDAB9E;
+}
+
+#cor-sonho-menina-3 {
+    background-color: #D3CED0;
+}
+
+#cor-cozinha-beatriz-1 {
+    background-color: #444B3B;
+}
+
+#cor-cozinha-beatriz-2 {
+    background-color: #AAB999;
+}
+
+#cor-cozinha-beatriz-3 {
+    background-color: #CBBEAC;
+}
+
+#cor-descanso-verde-1 {
+    background-color: #514924;
+}
+
+#cor-descanso-verde-2 {
+    background-color: #50412B;
+}
+
+#cor-descanso-verde-3 {
+    background-color: #A58A63;
+}
+
+@media (min-width: 992px) {
+    #projetos h2 {
+        display: none;
+    }
+
+    .projeto {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .projeto div {
+        width: 50%;
+    }
+
+    .projeto-imgs div {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+    }
+
+    .img-quadrado {
+        flex: 1;
+        width: 0;
+        min-width: 0;
+        aspect-ratio: 1/1 !important;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .projeto-detalhes div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .projeto-cores{
+        margin: 25px auto !important;
+        gap: 2em;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .projeto-cores div{
+        max-width:  3em;
+        min-height: 3em;
+        margin: 0;
+    }
+}

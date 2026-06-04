@@ -1,0 +1,154 @@
+/* CABECALHO */
+.cabecalho {
+    background-color: var(--cor-fundo-primaria);
+    display: flex;
+    height: 68px;
+    padding: 3em 2em;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000031;
+    z-index: 999;
+}
+
+.cabecalho.sem-sombra {
+    box-shadow: none;
+}
+
+.cabecalho h2,
+.cabecalho hr {
+    display: none;
+}
+
+.logo {
+    height: 4em;
+}
+
+.menu {
+    width: 3.5em;
+}
+
+.hamburguer {
+    border: none;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    padding: 1em;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000031;
+    background: var(--cor-fundo-primaria);
+    transform: translateY(-200%);
+    transition: 0.8s;
+    z-index: 998;
+}
+
+#menu.ativo {
+    transform: translateY(0);
+}
+
+header ul {
+    list-style: none;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+header a,
+.btn-submenu {
+    font-family: var(--fonte-montserrat);
+    font-weight: 500;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.btn-submenu {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    gap: .5em;
+}
+
+.submenu li:first-child {
+    margin-top: 1em;
+}
+
+.submenu.ativo {
+    max-height: 200px;
+}
+
+.seta {
+    transition: transform 0.3s ease;
+}
+
+.seta.ativa {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+    /* CABECALHO */
+    .cabecalho h2,
+    .cabecalho hr {
+        display: block;
+    }
+
+    .cabecalho h2 {
+        white-space: nowrap;
+        color: var(--cor-primaria);
+        font-family: var(--fonte-libre-franklin);
+        font-size: 20px;
+    }
+
+    .cabecalho hr {
+        width: 100%;
+        margin: 0 2em;
+        border: 1px solid var(--cor-primaria);
+    }
+
+    #btnMenu,
+    .logo,
+    .submenu,
+    .seta {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        width: auto;
+    }
+
+    #menu.ativo {
+        transform: translateY(0);
+    }
+
+    header ul {
+        flex-direction: row;
+        justify-content: end;
+        gap: 1.5em;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,62 @@
+/* SUMARIO */
+#sumario {
+    display: none;
+}
+
+@media (min-width: 992px) {
+
+    /* SUMARIO */
+    #sumario {
+        width: 100%;
+        display: flex;
+        margin-inline: -10px;
+        width: calc(100% + 20px);
+        margin-bottom: 11em;
+    }
+
+    #sumario a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .img-sumario {
+        aspect-ratio: 3/3;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+
+    #sumario a p,
+    #sumario a h3 {
+        position: absolute;
+    }
+
+    #sumario a p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        background-color: var(--cor-primaria);
+        padding: 1em;
+        border-radius: 50%;
+        font-size: 24px;
+        width: 90px;
+        height: 90px;
+        color: var(--cor-fundo-primaria);
+        font-weight: bold;
+    }
+
+    #sumario a h3{
+        width: 150px;
+        color: var(--cor-primaria);
+        text-align: center;
+        font-size: 28px;
+        bottom: -170px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
