@@ -1,0 +1,47 @@
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.ativo {
+    display: flex;
+}
+
+.modal-img {
+    max-width: 85vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    background: none;
+    border: none;
+    color: var(--cor-fundo-primaria);
+    width: 3.5em;
+    cursor: pointer;
+}
+
+.modal-nav {
+    background: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    max-width: 60px;
+    user-select: none;
+}
+
+.modal-contador {
+    position: absolute;
+    bottom: 1.2em;
+    color: var(--cor-fundo-primaria);
+    font-size: 0.9em;
+}

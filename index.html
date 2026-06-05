@@ -156,10 +156,13 @@
                 </div>
 
                 <div class="projeto-imgs">
-                    <img src="/img/casa-de-campo-quarto-1.png" alt="" class="img">
+                    <img src="/img/casa-de-campo-quarto-1.png" alt="" class="img" data-grupo="casa-campo-quarto"
+                        data-index="0">
                     <div>
-                        <img src="/img/casa-de-campo-quarto-2.png" alt="" class="img img-quadrado">
-                        <img src="/img/casa-de-campo-quarto-3.png" alt="" class="img img-quadrado">
+                        <img src="/img/casa-de-campo-quarto-2.png" alt="" class="img img-quadrado"
+                            data-grupo="casa-campo-quarto" data-index="1">
+                        <img src="/img/casa-de-campo-quarto-3.png" alt="" class="img img-quadrado"
+                            data-grupo="casa-campo-quarto" data-index="2">
                     </div>
                 </div>
             </article>
@@ -194,10 +197,13 @@
                 </div>
 
                 <div class="projeto-imgs">
-                    <img src="/img/casa-de-campo-cozinha-1.png" alt="" class="img">
+                    <img src="/img/casa-de-campo-cozinha-1.png" alt="" class="img" data-grupo="casa-campo-cozinha"
+                        data-index="0">
                     <div>
-                        <img src="/img/casa-de-campo-cozinha-2.png" alt="" class="img img-quadrado">
-                        <img src="/img/casa-de-campo-cozinha-3.png" alt="" class="img img-quadrado">
+                        <img src="/img/casa-de-campo-cozinha-2.png" alt="" class="img img-quadrado"
+                            data-grupo="casa-campo-cozinha" data-index="1">
+                        <img src="/img/casa-de-campo-cozinha-3.png" alt="" class="img img-quadrado"
+                            data-grupo="casa-campo-cozinha" data-index="2">
                     </div>
                 </div>
             </article>
@@ -233,8 +239,8 @@
                 </div>
 
                 <div class="projeto-imgs">
-                    <img src="/img/sonho-menina-1.png" alt="" class="img">
-                    <img src="/img/sonho-menina-2.png" alt="" class="img">
+                    <img src="/img/sonho-menina-1.png" alt="" class="img" data-grupo="sonho-menina" data-index="0">
+                    <img src="/img/sonho-menina-2.png" alt="" class="img" data-grupo="sonho-menina" data-index="1">
                 </div>
             </article>
 
@@ -266,8 +272,10 @@
                 </div>
 
                 <div class="projeto-imgs">
-                    <img src="/img/cozinha-beatriz-1.png" alt="" class="img">
-                    <img src="/img/cozinha-beatriz-2.png" alt="" class="img">
+                    <img src="/img/cozinha-beatriz-1.png" alt="" class="img" data-grupo="cozinha-beatriz"
+                        data-index="0">
+                    <img src="/img/cozinha-beatriz-2.png" alt="" class="img" data-grupo="cozinha-beatriz"
+                        data-index="1">
                 </div>
             </article>
 
@@ -299,10 +307,12 @@
                 </div>
 
                 <div class="projeto-imgs">
-                    <img src="/img/descanso-verde-1.png" alt="" class="img">
+                    <img src="/img/descanso-verde-1.png" alt="" class="img" data-grupo="descanso-verde" data-index="0">
                     <div>
-                        <img src="/img/descanso-verde-2.png" alt="" class="img img-quadrado">
-                        <img src="/img/descanso-verde-3.png" alt="" class="img img-quadrado">
+                        <img src="/img/descanso-verde-2.png" alt="" class="img img-quadrado" data-grupo="descanso-verde"
+                            data-index="1">
+                        <img src="/img/descanso-verde-3.png" alt="" class="img img-quadrado" data-grupo="descanso-verde"
+                            data-index="2">
                     </div>
                 </div>
             </article>
@@ -362,7 +372,17 @@
         <p>© 2026 · Larissa Rainha. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalCarrossel">
+        <button class="modal-fechar" id="modalFechar"><img src="/svg/xmark.svg" alt=""></button>
+        <button class="modal-nav modal-prev" id="modalPrev"><img src="/svg/left-solid.svg" alt=""></button>
+        <img src="" alt="" class="modal-img" id="modalImg">
+        <button class="modal-nav modal-next" id="modalNext"><img src="/svg/right-solid.svg" alt=""></button>
+        <p class="modal-contador" id="modalContador"></p>
+    </div>
+
     <script src="js/events.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
