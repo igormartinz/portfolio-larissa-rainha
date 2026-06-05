@@ -4,6 +4,7 @@
 @import url(/css/summary.css);
 @import url(/css/projects.css);
 @import url(/css/contact.css);
+@import url(/css/footer.css);
 @import url(/css/modal.css);
 
 /* FONTES */
@@ -105,18 +106,6 @@ p span {
     font-family: var(--fonte-telegraf);
     color: var(--cor-primaria);
     margin-bottom: 10px;
-}
-
-/* RODAPE */
-footer {
-    background-color: var(--cor-primaria);
-    padding: 1em;
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-    color: var(--cor-fundo-primaria);
 }
 
 @media (min-width: 992px) {

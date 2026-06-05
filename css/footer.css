@@ -1,0 +1,11 @@
+/* RODAPE */
+footer {
+    background-color: var(--cor-primaria);
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: var(--cor-fundo-primaria);
+}
