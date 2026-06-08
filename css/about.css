@@ -9,8 +9,8 @@
 
 #perfil {
     border-radius: 50%;
-    width: 15em;
-    max-width: 15em;
+    width: 40%;
+    min-width: 200px;
     align-self: center;
     margin-bottom: 25px;
 }
@@ -24,7 +24,7 @@
     margin-bottom: 15px;
 }
 
-.softwares-lista div{
+.softwares-lista div {
     display: flex;
     gap: 0.5em;
 }
@@ -33,10 +33,32 @@
     width: 40px;
 }
 
+@media (min-width: 670px) {
+    #perfil {
+        max-width: 350px;
+    }
+
+    .habilidades {
+        display: flex;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    #softwares,
+    #competencias,
+    #idiomas {
+        width: 100%;
+    }
+
+    .softwares-lista {
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 992px) {
+
     /* SOBRE */
     #sobre {
-        margin: 25px 50px;
         display: flex;
         gap: 2em;
         flex-direction: row;
@@ -59,8 +81,7 @@
 
     #perfil {
         border-radius: 50%;
-        width: 22em;
-        max-width: 22em;
+        min-width: 18em;
         align-self: center;
         margin-bottom: 0;
     }
@@ -76,5 +97,15 @@
         align-self: center;
         gap: 0.8em;
         margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #perfil{
+        min-width: 22em;
+    }
+
+    #sobre{
+        margin: 1.5em 4em;
     }
 }

@@ -51,9 +51,10 @@
 .contato-img {
     margin: 15px auto 0 auto;
     width: 80%;
+    max-width: 300px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     #contato {
         width: 100%;
         display: flex;
